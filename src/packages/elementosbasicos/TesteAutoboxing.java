@@ -15,7 +15,7 @@ public class TesteAutoboxing {
         //Auto un-boxing
         short num7 = num1;
         byte  num8 = num2;
-        int   num9 = num3; //num3.intValue();
+        int   num9 = num3; // num3.intValue();
         long  num10 = num4;
     }
 }
