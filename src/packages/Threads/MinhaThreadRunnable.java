@@ -8,8 +8,8 @@ public class MinhaThreadRunnable implements Runnable {
     public MinhaThreadRunnable(String nome, int tempo){
         this.nome = nome;
         this.tempo = tempo;
-        Thread thread = new Thread(this);
-        thread.start();
+        // Thread thread = new Thread(this);
+        // thread.start();
     }
 
     @Override
@@ -17,7 +17,7 @@ public class MinhaThreadRunnable implements Runnable {
         try {
             for(int i = 0; i <= 5; i++){
                 System.out.println(this. nome + " " +i);
-                    Thread.sleep(this.tempo);
+                Thread.sleep(this.tempo);
             }
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
@@ -25,7 +25,6 @@ public class MinhaThreadRunnable implements Runnable {
         }
 
         System.out.println(this.nome + " Terminou o processo");
-        
     }
     
 }
